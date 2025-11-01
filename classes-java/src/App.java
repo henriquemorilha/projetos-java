@@ -12,9 +12,13 @@ public class App {
         );
 
         usuario1.ativo = true;
-        System.out.println(usuario1.isAtivo());
-        System.out.println(usuario2.isAtivo());
-        System.out.println(Usuario.getLimiteCaracteres());
+        // System.out.println(usuario1.isAtivo());
+        // System.out.println(usuario2.isAtivo());
+        // System.out.println(Usuario.getLimiteCaracteres());
+
+        System.out.println(usuario1.username);
+        System.out.println(usuario2.username);
+        System.out.println(Usuario.NUMERO_DE_CARACTERES_USERNAME);
 
     }
 

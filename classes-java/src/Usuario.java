@@ -3,6 +3,7 @@ public class Usuario {
     public String password;
     public String email;
     public boolean ativo;
+    public static final int NUMERO_DE_CARACTERES_USERNAME = 10;
 
     public Usuario() {
     
@@ -20,6 +21,6 @@ public class Usuario {
     }
     
     public static int getLimiteCaracteres() {
-        return 10;
+        return NUMERO_DE_CARACTERES_USERNAME;
     }
 }
