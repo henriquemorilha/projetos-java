@@ -13,7 +13,11 @@ public class App {
         } else {
             System.out.println("Reprovado");
         }    
-    }
+            System.out.println(potenciacao(2, 2));
+            System.out.println(potenciacao(3, 2));
+            
+        }    
+    
 
     public static void alarmeHoraDoLanche() {
         System.out.println("Hora do Lanche!");
@@ -22,5 +26,9 @@ public class App {
     public static double calcularMedia(double nota1, double nota2, double nota3) {
         double media = (nota1 + nota2 + nota3) / 3.0;
         return media;
+    }    
+
+    public static double potenciacao(int base, int potencia) {
+        return Math.pow(base, potencia);
     }    
 }
