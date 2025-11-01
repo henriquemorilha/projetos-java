@@ -7,13 +7,15 @@ public class MensagemDoDia {
         int numero = scanner.nextInt();
 
         // >, <, <=, >=, ==, !=
+        String mensagem;
         if (numero >= 1 && numero <= 5) {
-           System.out.println( "Quem avisa amigo é");
+           mensagem = "Quem avisa amigo é";
         } else if (numero >= 6 && numero <= 10) {
-           System.out.println( "Você é o que você come");
+           mensagem = "Você é o que você come";
         } else {
-            System.out.println( "Informe uma opção válida!");
+            mensagem = "Informe uma opção válida!";
         }
         
+        System.out.println(mensagem);
     }    
 }
