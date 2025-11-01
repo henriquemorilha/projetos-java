@@ -5,14 +5,23 @@ public class EstudanteApp {
         char inicialDoSobrenome = 'M';
         double media = 10.0;
         boolean aprovado = true;
-        String nome = "Henrique Morilha";
+        String nome = "Henrique";
+        String sobrenome = "Morilha";
 
-        System.out.println(idade);
+        System.out.println(
+            idade + ", " 
+            + inicialDoNome + ", " 
+            + inicialDoSobrenome + ", "
+            + media + ", "
+            + aprovado + ", "
+            + nome + ", "
+            + sobrenome + ", "
+        );
         System.out.println(inicialDoNome);
         System.out.println(inicialDoSobrenome);
         System.out.println(media);
         System.out.println(aprovado);
-        System.out.println(nome);
-        System.out.println("Henrique");
+        System.out.println(nome + " " + sobrenome);
+        System.out.println(inicialDoNome + " " + inicialDoSobrenome);
     }
 }
