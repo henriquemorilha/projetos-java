@@ -23,5 +23,14 @@ public class EstudanteApp {
         System.out.println(aprovado);
         System.out.println(nome + " " + sobrenome);
         System.out.println(inicialDoNome + " " + inicialDoSobrenome);
-    }
+
+        System.out.println(nome.charAt(0));
+        System.out.println(nome.charAt(1));
+
+        System.out.println(nome.length());
+
+        System.out.println(nome.charAt(nome.length() -1));
+
+        System.out.println(nome.equals("Henrique"));
+}
 }
