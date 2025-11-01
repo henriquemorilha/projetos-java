@@ -7,7 +7,7 @@ public class Usuario {
     public Usuario() {
     
     }
-        
+
     public Usuario(String username, String password, String email) {
         this.username = username;
         this.password = password;
@@ -16,6 +16,10 @@ public class Usuario {
     }
 
     public boolean isAtivo() {
-        return ativo;
-    }     
+        return ativo;    
+    }
+    
+    public static int getLimiteCaracteres() {
+        return 10;
+    }
 }
