@@ -2,27 +2,26 @@ import java.util.Scanner;
 
 public class Quiz {
     public static void main(String[] args) {
+        String pergunta = "Qual a melhor linguagem de programação?";
+        String alternativa1 = "1- javascript";
+        String alternativa2 = "2- php";
+        String alternativa3 = "3- java";
+        int respostaCerta = 3;
+
+        System.out.println(pergunta);
+        System.out.println(alternativa1);
+        System.out.println(alternativa2);
+        System.out.println(alternativa3);
+        System.out.println("Digite a resposta certa (1, 2 ou 3):");
+
         Scanner scanner = new Scanner(System.in);
+        int resposta = scanner.nextInt();
 
-        System.out.println("Quanto é 2 + 2?:");
-        System.out.println("1 - 3");
-        System.out.println("2 - 300");
-        System.out.println("3 - 4");
-
-        int numero = scanner.nextInt();
-        String mensagem;
-
-        if (numero == 1) {
-            mensagem = "Resposta incorreta";
-        } else if (numero == 2) {
-            mensagem = "Resposta incorreta";
-        } else if (numero == 3) {
-            mensagem = "Resposta correta";
+        if (resposta == respostaCerta) {
+            System.out.println("Parabéns, você acertou!");
         } else {
-            mensagem = "Informe uma resposta válida";
+            System.out.println("Que pena, a resposta certa era " + respostaCerta);    
         }
-
-        System.out.println(mensagem);
-        scanner.close();
-    }
-}
+    }    
+    
+}    
