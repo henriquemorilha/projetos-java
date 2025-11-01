@@ -1,6 +1,10 @@
+import java.util.Scanner;
+
 public class MensagemDoDia {
     public static void main(String[] args) {
-        int numero +1;
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Digite um número de 1 a 10:");
+        int numero = scanner.nextInt();
 
         // >, <, <=, >=, ==, !=
         if (numero >= 1 && numero <= 5) {
@@ -9,5 +13,7 @@ public class MensagemDoDia {
            System.out.println( "Você é o que você come");
         } else {
             System.out.println( "Informe uma opção válida!");
-    }
+        }
+        
+    }    
 }
